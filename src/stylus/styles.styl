@@ -5,6 +5,8 @@
 @import './download.styl'
 @import './questions.styl'
 @import './collapsable.styl'
+@import './join.styl'
+@import './footer.styl'
 
 :root 
   --softBlue: hsl(231, 69%, 60%)
@@ -42,6 +44,10 @@ ul
   @extends .u-h1
   font-size: 1.5em
 
+.u-h4
+  @extends .u-h1
+  font-size: 1.3em
+
 .u-p
   color: var(--grayishBlue)
   line-height: 1.8em
@@ -58,6 +64,10 @@ ul
   cursor: pointer
   box-shadow: 0 5px 10px -5px var(--grayishBlue)
 
+  &.is-red
+    background: var(--softRed)
+    color: white;
+
   &.is-gray
     color: var(--veryDarkBlue)
     background: #f7f7f7
@@ -65,3 +75,19 @@ ul
   &.is-fullWidth
     width: 100%
 
+.form
+  &-input
+    width: 100%
+    padding: 1em
+    box-sizing: border-box
+    margin-bottom: 1.5em
+    border-radius: 10px
+    border: none
+    font-size: 1em
+    outline: 0
+
+    &::-webkit-input-placeholder
+      color: var(--lightGray)
+
+  u-button
+    margin: 0
