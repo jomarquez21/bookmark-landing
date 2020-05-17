@@ -103,6 +103,7 @@
 }
 .tabs-content img {
   max-width: 100%;
+  margin-bottom: 1.5em;
 }
 .tabs-grid {
   margin-top: 4em;
@@ -146,6 +147,7 @@
 }
 .features {
   text-align: center;
+  padding: 3em 0;
 }
 :root {
   --softBlue: #5368df;
@@ -174,6 +176,9 @@ ul {
 .u-h2 {
   font-size: 2em;
   font-weight: 500;
+}
+.u-h2 {
+  font-size: 1.5em;
 }
 .u-p {
   color: var(--grayishBlue);
