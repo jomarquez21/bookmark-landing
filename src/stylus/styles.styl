@@ -2,6 +2,7 @@
 @import './header.styl'
 @import './tabs.styl'
 @import './features.styl'
+@import './download.styl'
 
 :root 
   --softBlue: hsl(231, 69%, 60%)
@@ -34,6 +35,10 @@ ul
   @extends .u-h1
   font-size: 1.5em
 
+.u-h3
+  @extends .u-h1
+  font-size: 1.5em
+
 .u-p
   color: var(--grayishBlue)
   line-height: 1.8em
@@ -53,4 +58,7 @@ ul
   &.is-gray
     color: var(--veryDarkBlue)
     background: #f7f7f7
+
+  &.is-fullWidth
+    width: 100%
 

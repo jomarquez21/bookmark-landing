@@ -125,7 +125,7 @@
   width: 45%;
   left: 0;
   transform: translateX(65%);
-  box-shadow: inset 0 -15px 0 -10px #f00;
+  box-shadow: inset 0 -15px 0 -10px var(--softRed);
 }
 .tabs input[id="bookmarking"]:checked ~ ul [for="bookmarking"]:after {
   display: block;
@@ -148,6 +148,34 @@
 .features {
   text-align: center;
   padding: 3em 0;
+}
+.download {
+  border: 1px solid #f00;
+  text-align: center;
+  padding: 3em 0;
+}
+.download .u-wrapper > .u-p {
+  margin-bottom: 3em;
+}
+.download-grid {
+  margin-top: 3em;
+  display: grid;
+  grid-row-gap: 2em;
+  margin: 0 1em;
+}
+.download-item {
+  box-shadow: 0 10px 11px -5px rgba(83,104,223,0.3);
+  border-radius: 1em;
+  padding: 1.5em;
+  padding-top: 2.5em;
+  background: url("./../images/bg-dots.svg") repeat-x center bottom 100px;
+}
+.download-item .u-p {
+  margin-bottom: 4em;
+  margin-top: 0.5rem;
+}
+.download-item .u-h3 {
+  margin: 1.5rem 0 0.5rem;
 }
 :root {
   --softBlue: #5368df;
@@ -173,11 +201,15 @@ ul {
   padding: 0 1em;
 }
 .u-h1,
-.u-h2 {
+.u-h2,
+.u-h3 {
   font-size: 2em;
   font-weight: 500;
 }
 .u-h2 {
+  font-size: 1.5em;
+}
+.u-h3 {
   font-size: 1.5em;
 }
 .u-p {
@@ -199,4 +231,7 @@ ul {
 .u-button.is-gray {
   color: var(--veryDarkBlue);
   background: #f7f7f7;
+}
+.u-button.is-fullWidth {
+  width: 100%;
 }
