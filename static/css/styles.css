@@ -1,0 +1,102 @@
+.hero {
+  border: 1px solid #f00;
+}
+.menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(47,53,79,0.9);
+  transform: translateY(-50px);
+  transition: 0.3s transform, 0.3s opacity;
+  will-change: transform;
+}
+.menu ul {
+  padding: 0;
+  list-style: none;
+}
+.menu li {
+  border-top: 1px solid var(--grayishBlue);
+}
+.menu li:last-child a {
+  margin-top: 1em;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 0.7em;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  padding: 1em;
+  letter-spacing: 2px;
+}
+.menu-open {
+  user-select: none;
+  height: 40px;
+  width: 40px;
+  display: inline-flex;
+  background: url("../images/icon-hamburger.svg") no-repeat center;
+  cursor: pointer;
+}
+.menu-checkbox {
+  display: none;
+}
+.menu-checkbox:checked ~ .header {
+  background: rgba(47,53,79,0.9);
+}
+.menu-checkbox:checked ~ .header .header-logo {
+  background-image: url("./../images/logo-bookmark-white.svg");
+}
+.menu-checkbox:checked ~ .header .menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.menu-checkbox:checked ~ .header .menu-open {
+  background-image: url("../images/icon-close.svg");
+}
+.header {
+  background: #fff;
+  position: sticky;
+  padding: 1.5em 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.3s background;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  display: inline-flex;
+  width: 150px;
+  height: 40px;
+  background: url("./../images/logo-bookmark.svg") no-repeat center;
+  background-size: contain;
+}
+:root {
+  --softBlue: #5368df;
+  --softRed: #fa5757;
+  --grayishBlue: #9194a1;
+  --veryDarkBlue: #252b46;
+}
+body {
+  background: #d3d3d3;
+  font-family: 'Rubik', sans-serif;
+  color: var(--veryDarkBlue);
+  margin: 0;
+  font-size: 18;
+}
+.u-wrapper {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 1em;
+}
